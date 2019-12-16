@@ -1,0 +1,18 @@
+CREATE DATABASE `reactht` /*!40100 DEFAULT CHARACTER SET latin1 */;
+CREATE TABLE `users` (
+  `id_user` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(45) NOT NULL,
+  `password` varchar(45) NOT NULL,
+  PRIMARY KEY (`id_user`),
+  UNIQUE KEY `username_UNIQUE` (`username`),
+  UNIQUE KEY `id_user_UNIQUE` (`id_user`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `posts` (
+  `id_posts` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(45) DEFAULT NULL,
+  `post_title` varchar(45) NOT NULL,
+  `post_content` varchar(250) NOT NULL,
+  PRIMARY KEY (`id_posts`),
+  UNIQUE KEY `id_posts_UNIQUE` (`id_posts`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
