@@ -4,12 +4,11 @@ const mysql = require("mysql");
 
 const SELECT_ALL_FROM_USERS = "SELECT * FROM users";
 const SELECT_ALL_FROM_POSTS = "SELECT * FROM posts";
-const SELECT_FROM_POSTS_WHERE = "SELECT * FROM posts WHERE id_post = ";
 
 const connection = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "admin",
+  password: "",
   database: "reactht"
 });
 
